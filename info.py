@@ -18,30 +18,30 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', '21655449'))
-API_HASH = environ.get('API_HASH', '112be9974e163f6dbd645ce4b94f4e6a')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6722766243:AAGh6qSkH27OjahN-3JcGeh5XLtsMQpzcMw')
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1229852181').split()]
-USERNAME = environ.get('USERNAME', 'https://t.me/IllegalDeveloperBot')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002107365899'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+4RB2-U2o9yE4ZmQ9')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001856885647 -1001818726355').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://bqyrtxzl:7ExafpH6u8D74QbC@cluster0.ohzeohu.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://mtqlfehk:LTAQxuGodluAG6cQ@cluster0.dr1fphj.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "bqyrtxzl")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'mtqlfehk')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '1001799594060'))
-QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/ccb9db43e62a2e524928e.jpg')
+USERNAME = environ.get('USERNAME', '')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', '')
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
+DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', '')
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
+QR_CODE = environ.get('QR_CODE', '')
 
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1001799594060'))
-URL = environ.get('URL', 'illegal-testbot-308325bcba17.herokuapp.com')
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', ''))
+URL = environ.get('URL', '')
 
 # verify system vars
 IS_VERIFY = is_enabled('IS_VERIFY', True)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002107365899'))
-TUTORIAL = environ.get("TUTORIAL", "https://illegaldevelopers.blogspot.com/p/file.html?link=NTQwNDc2MjEzMw==_MTA1OQ==")
-VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
+TUTORIAL = environ.get("TUTORIAL", "")
+VERIFY_IMG = environ.get("VERIFY_IMG", "")
 SHORTENER_API = environ.get("SHORTENER_API", "e9c14ecc179245950a51803d50966fd1567f57c0")
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "urlspay.in")
 SHORTENER_API2 = environ.get("SHORTENER_API2", "9225b2f48ed01c4520a026d285b6c3932bf3bf88")
@@ -54,12 +54,12 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 # languages search
 LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam"]
 
-auth_channel = environ.get('AUTH_CHANNEL', '-1002078663926')
+auth_channel = environ.get('AUTH_CHANNEL', '')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002008705346'))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', ''))
 
 # hastags request features
-request_channel = environ.get('REQUEST_CHANNEL', '-1002078663926')
+request_channel = environ.get('REQUEST_CHANNEL', '')
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
 
 # bot settings
